@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+            integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="../styles/cardapio.css">
+        <title>Cardápio Chocone</title>
+    </head>
+    <body>
+        <header>
+            <div class="cabecalho">
+                <div><img src="../img/logo-chocone.png"
+                        alt="Logotipo da Chocone" class="img-logo">
+                    <p class="nome-logo">chocone</p></div>
+                <li class="link-loja">
+                    <a href="../index.html" target="_blank">Home</a>
+                </li>
+            </div>
+        </header>
+        <hr />
+        <main>
+            <section class="initial-section">
+                <p class="texto-inicial">Bem Vindo(a) ao Cardápio Chocone!</p>
+                <div class="container-cardapio-total-final">
+                    <ol class="lista-legenda">
+                        <li class="legenda-item">Produtos:</li>
+                        <li class="legenda-item" style="margin-right: 5rem;">Tamanhos:</li>
+                    </ol>
+                    <div class="container-cardapio">
+                        <h1 class="titulo-cardapio">Cones Trufados</h1>
+                        <ul class="lista-produtos">
+                            <li class="produtos_item">Trufado de Amendoim</li>
+                            <li class="produtos_item">Trufado de Brigadeiro</li>
+                            <li class="produtos_item">Trufado de Avelã</li>
+                            <li class="produtos_item">Trufado de Chocolate</li>
+                        </ul>
+                        <ul class="lista-tamanhos">
+                            <li class="tamanhos-item">Pequeno</li>
+                            <li class="tamanhos-item">Médio</li>
+                            <li class="tamanhos-item">Grande</li>
+                        </ul>
+                        <ul class="lista-precos">
+                            <ul class="tamanhos-precos_item">
+                                <li class="precos-items">X.00,00</li>
+                                <li class="precos-items">XX.00,00</li>
+                                <li class="precos-items">X.00,00</li>
+                            </ul>
+                            <ul class="tamanhos-precos_item">
+                                <li class="precos-items">X.00,00</li>
+                                <li class="precos-items">XX.00,00</li>
+                                <li class="precos-items">X.00,00</li>
+                            </ul>
+                            <ul class="tamanhos-precos_item">
+                                <li class="precos-items">X.00,00</li>
+                                <li class="precos-items">XX.00,00</li>
+                                <li class="precos-items">X.00,00</li>
+                            </ul>
+                            <ul class="tamanhos-precos_item">
+                                <li class="precos-items">X.00,00</li>
+                                <li class="precos-items">XX.00,00</li>
+                                <li class="precos-items">X.00,00</li>
+                            </ul>
+                        </ul>
+                        <h2 class="titulo-acompanhamentos">Acompanhamentos:</h2>
+                        <ul class="lista-acompanhamentos">
+                            <li class="acompanhamentos-item">Banana</li>
+                            <li class="acompanhamentos-item">Brigadeiro</li>
+                            <li class="acompanhamentos-item">Leite Ninho</li>
+                            <li class="acompanhamentos-item">Nutela</li>
+                            <li class="acompanhamentos-item">Morango</li>
+                            <li class="acompanhamentos-item">Chocolate</li>
+                            <li class="acompanhamentos-item">Ovomaltine</li>
+                            <li class="acompanhamentos-item">Beijinho</li>
+                            <li class="acompanhamentos-item">Charge</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="second-section">
+                <p class="texto-form">Agora que você conhece nosso Cardápio,
+                    Preencha o formulário abaixo e faça o seu pedido:</p>
+
+
+                <form action="https://formsubmit.co/renan.c.wuicik.gomes@gmail.com" method="POST" class="formulario">
+                    <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="Nome">Nome:</label>
+                        <input name="Nome" id="nome" class="campo__escrita"
+                            type="text" minlength="3" required />
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label for="Email" class="campo__etiqueta">E-mail</label>
+                        <input type="email" name="Email" class="campo__escrita" required placeholder="seu-email@example.com">
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="Telefone">Telefone:</label>
+                        <input name="Telefone" id="tel" class="campo__escrita"
+                            type="tel" minlength="11" maxlength="18" required
+                            placeholder="(XX) X XXXX - XXXX" />
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="Sabor">Recheio do
+                            Cone:</label>
+                        <select class="campo__escrita" name="Sabor" id="sabor">
+                            <option>Surpreenda-Me</option>
+                            <option>Amendoim</option>
+                            <option>Brigadeiro</option>
+                            <option>Avelã</option>
+                            <option>Chocolate Branco</option>
+                            <option>Chocolate Preto</option>
+                        </select>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="Tamanho">Tamanho do
+                            Cone:</label>
+                        <select class="campo__escrita" name="Tamanho"
+                            id="tamanho">
+                            <option>Pequeno</option>
+                            <option>Médio</option>
+                            <option>Grande</option>
+                        </select>
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset class="formulario__campo">
+                        <label class="campo__etiqueta" for="Quantidade">Quantidade:</label>
+                        <input class="campo__escrita" name="Quantidade"
+                            id="quantidade"
+                            class="termos__input" type="number" required
+                            placeholder="Padrão: 1 Unidade">
+                        <span class="mensagem-erro"></span>
+                    </fieldset>
+                    <fieldset>
+                        <label class="campo__etiqueta" for="Mensagem">Observações:</label>
+                        <textarea class="campo__escrita" id="mensagem"
+                            name="Mensagem"
+                            placeholder="Eu tenho intolerância à lactose e alergia à glutem."
+                            cols="40" rows="7"></textarea>
+                    </fieldset>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:50145/html/agradecimento.html">
+                    <input type="hidden" name="_subject" value="Novo Pedido Chocone!">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_cc" value="renan.c.wuicik.14@gmail.com,conta.escolar.qualquer@gmail.com">
+                    <button value="Avançar" class="formulario__botao" id="enviar" data-botao-enviar type="submit" style="cursor: pointer;">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <hr />
+        <footer>
+            <div>
+                <img src="../img/logo-chocone.png" alt="logo chocone">
+                <p>&copy; Copyright Chocone 2023; Alguns Direitos Reservados.</p>
+            </div>
+            <div class="contato">
+                <p>Contatos:</p>
+                <a href="#">
+                    <img src="../img/Gmail-logo.png" alt="logo do gmail">
+                </a>
+                <a href="#">
+                    <img src="../img/Whatsapp-logo.png"
+                        alt="logo do Whatsapp-logo">
+                </a>
+            </div>
+        </footer>
+        <!-- <script src="../js/capturaEmail.js"></script> -->
+    </body>
+</html>

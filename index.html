@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+      integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Chocone</title>
+  </head>
+  <body>
+    <header>
+      <div class="cabecalho">
+        <div>
+          <img src="./img/logo-chocone.png" alt="Logotipo da Chocone"
+            class="img-logo">
+          <p class="nome-logo">chocone</p>
+        </div>
+        <li class="link-loja">
+          <a href="./html/cardapio.html" target="_blank">cardápio</a>
+        </li>
+      </div>
+    </header>
+    <main>
+      <section class="section-um">
+        <img src="./img/banner-chocone.png" alt="banner da empresa"
+          class="banner">
+        <h1 class="titulo-main">chocone</h1>
+        <aside class="aside-main">A melhor Da Região</aside>
+      </section>
+      <section class="section-dois">
+        <h2 class="subtitulo-main">Sobre a Empresa:</h2>
+        <p class="about-main">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Magnam cumque nulla doloribus asperiores cupiditate tempora
+          odio. Delectus, maxime sunt beatae laborum ex illo et magni ab quo
+          nisi nemo asperiores!</p>
+        <p class="about-main">Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Magnam cumque nulla doloribus asperiores cupiditate tempora
+          odio. Delectus, maxime sunt beatae laborum ex illo et magni ab quo
+          nisi nemo asperiores!</p>
+        <img src="./img/cones-img-1.png"
+          alt="imagens ilustrativas dos produtos oferecidos" class="img-about">
+      </section>
+      <section class="section-tres">
+        <h2 class="localizacao">Localização</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.0712032898487!2d-52.53833952521222!3d-26.96464439537436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e4c922e3cf280b%3A0xaeaae423f6fc2a42!2sEeb%20Gomes%20Carneiro!5e0!3m2!1spt-BR!2sbr!4v1684109226466!5m2!1spt-BR!2sbr"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+      <section class="section-quatro">
+        <h2 class="beneficios">Benefícios</h2>
+        <div class="beneficios-cont-flex">
+          <p class="texto-beneficios">Abaixo temos listados alguns dos
+            beneficios oferecidos por nossa empresa aos nossos clientes, confira
+            ao lado:</p>
+          <ul class="lista-beneficios">
+            <li class="lista-beneficios-item">Lorem ipsum elit.</li>
+            <li class="lista-beneficios-item">Velit nam fuga, expedita magni.</li>
+            <li class="lista-beneficios-item">Architecto corporis.</li>
+            <li class="lista-beneficios-item"> Tempora nesciunt.</li>
+            <li class="lista-beneficios-item">Velit nam fuga, expedita magni.</li>
+            <li class="lista-beneficios-item"> Tempora nesciunt.</li>
+          </ul>
+        </div>
+        <img src="./img/conetrufadotradicional.png"
+          alt="imagem ilustrativa dos produtos" class="img-cone">
+      </section>
+    </main>
+    <!-- <aside>
+        <menu class="menu">
+    
+            <button class="menu__item active" style="--bgColorItem: #ff8c00;" >
+              <svg class="icon" viewBox="0 0 24 24">
+                <path d="M3.8,6.6h16.4"/>
+                <path d="M20.2,12.1H3.8"/>
+                <path d="M3.8,17.5h16.4"/>
+              </svg>
+            </button>
+        
+            <button class="menu__item" style="--bgColorItem: #f54888;">
+              <svg class="icon" viewBox="0 0 24 24">
+                <path  d="M6.7,4.8h10.7c0.3,0,0.6,0.2,0.7,0.5l2.8,7.3c0,0.1,0,0.2,0,0.3v5.6c0,0.4-0.4,0.8-0.8,0.8H3.8
+                C3.4,19.3,3,19,3,18.5v-5.6c0-0.1,0-0.2,0.1-0.3L6,5.3C6.1,5,6.4,4.8,6.7,4.8z"/>
+                <path  d="M3.4,12.9H8l1.6,2.8h4.9l1.5-2.8h4.6"/>
+              </svg>
+            </button>
+        
+            <button class="menu__item" style="--bgColorItem: #4343f5;" >
+              <svg class="icon" viewBox="0 0 24 24">
+              <path  d="M3.4,11.9l8.8,4.4l8.4-4.4"/>
+              <path  d="M3.4,16.2l8.8,4.5l8.4-4.5"/>
+              <path  d="M3.7,7.8l8.6-4.5l8,4.5l-8,4.3L3.7,7.8z"/>
+            </button>
+        
+            <button class="menu__item" style="--bgColorItem: #e0b115;" > 
+              <svg class="icon" viewBox="0 0 24 24" >
+                <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
+                  C3.9,4.4,4.4,3.9,5.1,3.9z"/>
+                <path  d="M4.2,9.3h15.6"/>
+                <path  d="M9.1,9.5v10.3"/>
+            </button>
+        
+            <button class="menu__item" style="--bgColorItem:#65ddb7;">
+              <svg class="icon" viewBox="0 0 24 24" >
+                <path  d="M5.1,3.9h13.9c0.6,0,1.2,0.5,1.2,1.2v13.9c0,0.6-0.5,1.2-1.2,1.2H5.1c-0.6,0-1.2-0.5-1.2-1.2V5.1
+                  C3.9,4.4,4.4,3.9,5.1,3.9z"/>
+                <path  d="M5.5,20l9.9-9.9l4.7,4.7"/>
+                <path  d="M10.4,8.8c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6C7.3,8,8,7.3,8.9,7.3C9.7,7.3,10.4,8,10.4,8.8z"/>
+              </svg>
+            </button>
+        
+            <div class="menu__border"></div>
+        
+          </menu>
+        
+          <div class="svg-container">
+            <svg viewBox="0 0 202.9 45.5" >
+              <clipPath id="menu" clipPathUnits="objectBoundingBox" transform="scale(0.0049285362247413 0.021978021978022)">
+                <path  d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+                  c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+                  c9.2,3.6,17.6,4.2,23.3,4H6.7z"/>
+              </clipPath>
+            </svg>
+          </div>
+    </aside> -->
+    <footer>
+      <hr />
+      <div class="rodape">
+        <div class="rodape-container">
+          <img src="./img/logo-chocone.png" alt="Logo da Chocone">
+          <h5 class="rodape-texto">&copy; Copyright Chocone 2023; Alguns
+            Direitos Reservados.</h5>
+        </div>
+
+        <p class="contatos">Suporte</p>
+        <div class="contatos-container">
+          <button class="contato-botao">
+            <p class="contato-texto">Gmail</p>
+            <img src="./img/Gmail-logo.png" alt="logotipo do email">
+          </button>
+          <button class="contato-botao">
+            <p class="contato-texto">Whatsapp</p>
+            <img src="./img/Whatsapp-logo.png" alt="logotipo do whatsapp">
+          </button>
+        </div>
+      </div>
+    </footer>
+    <!-- <script src="./js/navbar.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,307 @@
+/* CONFIGURAÇÕES GERAIS, IMPORT´S E VARIÁVEIS */
+/* @import url(./navbar.css); */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+:root {
+    --cor-zero: #154580;
+    --cor-inicial: #3970BE;
+    --cor-dois: #E5F1FF;
+    --cor-tres: #444444;
+    --cor-quatro: #ECECEC;
+}
+
+/* FONTE DOS TITULOS e ESTILOS BACKGROUND-GERAL */
+.link-loja, 
+.titulo-main, 
+.subtitulo-main, 
+.localizacao, 
+.beneficios, 
+.contatos {
+    font-family: 'Inter', cursive;
+}
+
+/* .section-um {
+    background-color: var(--cor-inicial);
+}
+
+.section-dois {
+    background-color: var(--cor-dois);
+}
+
+.section-tres {
+    background-color: var(--cor-tres);
+}
+
+.section-quatro {
+    background-color: var(--cor-quatro);
+} */
+
+body {
+    background: linear-gradient(var(--cor-zero), 
+    var(--cor-inicial), 
+    var(--cor-dois), 
+    var(--cor-tres), 
+    var(--cor-quatro));
+}
+
+/* ESTILOS DO CABEÇALHO */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.cabecalho div {
+    display: flex;
+    align-items: center;
+} .img-logo {
+    width: 5rem;
+}
+
+.cabecalho li {
+    list-style: none;
+} .cabecalho a {
+    transition: .5s;
+    text-decoration: none;
+    color: #313131;
+}
+
+/* ESTILOS DO BANNER E PRIMEIRA SEÇÃO */
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+.titulo-main {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin: 1rem;
+}
+
+.aside-main {
+    color: #a83a90;
+    background-color: #ffecd08a;
+    border: 5px double #a83a90;
+    border-radius: 10px;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    margin: .5rem auto;
+    max-width: 30%;
+    padding: .5rem 1rem;
+}
+
+.subtitulo-main, 
+.localizacao, 
+.beneficios {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto 0.5rem;
+}
+
+/* ESTILOS DA SEÇÃO DE SOBRE A EMPRESA */
+.section-dois {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-main {
+    text-align: center;
+    max-width: 80%;
+    margin: 1rem auto;
+}
+
+.container-inicial iframe {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.img-about,
+.img-cone {
+    width: 30%;
+    margin: 1rem auto;
+    border: 2px double var(--cor-zero);
+    border-radius: 10px;
+}
+
+/* ESTILOS DA SEÇÃO DE LOCALIZAÇÃO */
+iframe {
+    margin: 1rem auto;
+    width: 100%;
+    opacity: .7;
+}
+
+/* ESTILOS SEÇÃO DE BENEFICIOS */
+.section-quatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beneficios-cont-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-beneficios {
+    margin: 0 1rem;
+    max-width: 27%;
+}
+
+.lista-beneficios-item {
+    text-align: left;
+    list-style: url(../img/star-image.png);
+    padding: .3rem auto;
+    margin: .3rem 1rem;
+}
+
+/* ESTILOS RODAPÉ */
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.rodape-container > img {
+    width: 15%;
+}
+
+.rodape-texto {
+    font-size: 17px;
+}
+
+.contatos {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem auto .5rem;
+}
+
+.contatos-container {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.contato-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+    margin: auto .3rem;
+    width: auto;
+}
+
+.contato-botao img {
+    width: 20%;
+    margin: auto .5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .cabecalho {
+        height: 20%;
+    }
+
+    .img-logo {
+        width: 40%;
+    }
+
+    .nome-logo,
+    .link-loja {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .titulo-main {
+        font-size: 50px;
+    }
+
+    .aside-main {
+        font-size: 26px;
+        margin: 2rem auto;
+    }
+
+    .subtitulo-main {
+        font-size: 42px;
+    }
+
+    .about-main {
+        font-size: 25px;
+        margin: 1rem auto;
+    }
+
+    .img-about {
+        width: 20%;
+        border: 7px groove #c289e4
+    }
+
+    .img-cone {
+        width: 17%;
+        border: 7px groove #f08dda;
+    }
+
+    .localizacao,
+    .beneficios {
+        font-size: 40px;
+    }
+
+    .texto-beneficios {
+        font-size: 27px;
+        margin-left: 2rem;
+    }
+
+    .lista-beneficios-item {
+        font-size: 27px;
+    }
+
+    .rodape img {
+        width: 10%;
+    }
+
+    .rodape-texto {
+        font-size: 18px;
+    }
+
+    .contatos {
+        font-size: 26px;
+    }
+
+    .contatos-container {
+        justify-content: center;
+    }
+
+    .contato-botao {
+        width: 40%;
+        margin: .5rem;
+    }
+
+    .section-tres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 70%;
+        margin: 2rem;
+    }
+
+    .link-loja a:hover {
+        transition: .3s;
+        color: #e0e0e0;
+        text-shadow: 7px 10px 17px #000;
+    }
+}

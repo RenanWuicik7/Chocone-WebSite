@@ -1,0 +1,381 @@
+/* VARIÁVEIS, ESTILOS GERAIS, E BACKGROUND´S */
+:root {
+    --cor-zero: #154580;
+    --cor-inicial: #3970BE;
+    --cor-dois: #E5F1FF;
+    --cor-tres: #444444;
+    --cor-quatro: #ECECEC;
+    --background-cardapio: #f8fff4;
+    --border-cardapio: #ecaa8e;
+}
+
+
+body {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    background: var(--cor-quatro);
+}
+
+/* ESTILOS DO CABEÇALHO */
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+}
+
+.cabecalho div {
+    display: flex;
+    align-items: center;
+}
+
+.img-logo {
+    width: 5rem;
+}
+
+.cabecalho li {
+    list-style: none;
+}
+
+.cabecalho a {
+    transition: .5s;
+    text-decoration: none;
+    color: #313131;
+}
+
+.link-loja a:hover {
+    transition: .5s;
+    color: #e0e0e0;
+    text-shadow: 3px 5px 7px #777;
+}
+
+/* ESTILOS DO CARDÁPIO EM SI */
+.container-cardapio-total-final {
+    background: var(--background-cardapio);
+    border: 2px groove var(--border-cardapio);
+    border-radius: 27px;
+    margin: .2rem;
+    box-shadow: 10px 20px 30px black;
+}
+
+.texto-inicial {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1rem auto;
+}
+
+.titulo-cardapio,
+.titulo-acompanhamentos {
+    font-weight: bold;
+    text-align: center;
+    margin: .5rem auto .1rem;
+}
+
+.legenda-item,
+.link-loja a,
+.titulo-acompanhamentos,
+.titulo-cardapio {
+    font-family: 'Inter', cursive;
+    font-style: italic;
+}
+
+.lista-legenda {
+    display: flex;
+    justify-content: space-between;
+    margin: .2rem auto;
+}
+
+.legenda-item {
+    font-weight: bolder;
+    margin: 0 3rem;
+}
+
+.container-cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: .1fr 1fr .1fr 1fr;
+    margin: auto;
+}
+
+.titulo-cardapio {
+    grid-area: 1/1/2/2;
+}
+
+/* TAMANHOS DOS CONES */
+.lista-tamanhos {
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+/* ORGANIZAÇÃO DOS PREÇOS */
+.lista-precos {
+    grid-area: 2/2/3/3;
+    align-self: center;
+}
+
+/* ORGANIZAÇÃO DOS PRODUTOS */
+.lista-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamanhos-precos_item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.precos-items::before {
+    content: "R$ ";
+    font-size: 10px;
+}
+
+/* ORGANIZAÇÃO DOS ACOMPANHAMENTOS */
+.titulo-acompanhamentos {
+    grid-area: 3/1/4/3;
+}
+
+.lista-acompanhamentos {
+    grid-area: 4/1/5/3;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem .5rem 0;
+}
+
+.acompanhamentos-item {
+    font-size: 13px;
+    font-style: italic;
+    margin: .2rem;
+}
+
+/* SEGUNDA SEÇÃO // ESTILOS DO FORMULÁRIO */
+.second-section {
+    margin: 2rem;
+    font-size: 12px;
+}
+
+.texto-form {
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    margin: 5rem auto 1rem;
+}
+
+.campo__etiqueta {
+    font-size: 15px;
+}
+
+.campo__escrita {
+    background-color: whitesmoke;
+    border: 2px solid var(--cor-zero);
+    border-radius: 7px;
+    padding: .3rem .5rem;
+    margin: .3rem 0;
+}
+
+.campo__escrita::placeholder {
+    color: #000;
+    font-size: 12px;
+    font-family: 'Red Hat Display', cursive;
+}
+
+.formulario__campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__botao {
+    font-size: 17px;
+    padding: .2rem 1rem;
+    background-color: var(--cor-inicial);
+    border-radius: 7px;
+    margin: 1rem 0;
+}
+
+fieldset {
+    margin: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer div>img {
+    width: 20%;
+    margin: 1rem;
+}
+
+footer div>p {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.contato img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contato a {
+    background-color: #6b5075;
+    margin: .5rem .2rem;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+@media screen and (min-width: 700px) {
+    .formulario {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem auto;
+    }
+
+    .container-cardapio-total-final {
+        border: 7px groove var(--border-cardapio);
+    }
+
+    .campo__escrita {
+        padding: 1rem;
+        border: 5px groove #cfb9e0;
+        transition: .4s;
+    }
+
+    .campo__escrita:focus {
+        border: 7px double #9368c5;
+        transition: .4s;
+    }
+
+    .initial-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-cardapio-total-final {
+        padding: 2rem;
+        width: 50%;
+        height: auto;
+        margin: 2rem;
+    }
+
+    .titulo-cardapio,
+    .tamanhos-item,
+    .lista-legenda,
+    .titulo-acompanhamentos {
+        font-size: 25px;
+    }
+
+    .produtos_item,
+    .acompanhamentos-item {
+        font-size: 23px;
+    }
+
+    .precos-items {
+        font-size: 22px;
+    }
+
+    .cabecalho {
+        height: 20%;
+    }
+
+    .img-logo {
+        width: 20%;
+    }
+
+    .texto-inicial,
+    .link-loja,
+    .nome-logo {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .aside-main {
+        font-size: 26px;
+        margin: 2rem auto;
+    }
+
+    .texto-form {
+        font-size: 32px;
+        margin: 5rem auto 2rem;
+    }
+
+    .campo__etiqueta,
+    .formulario__botao {
+        font-size: 24px;
+    }
+
+    .formulario__botao {
+        padding: 1rem 2rem;
+        width: 50%;
+        margin: .2rem auto;
+        text-transform: uppercase;
+        font-weight: bold;
+        transition: .5s;
+    }
+
+    .formulario__botao:hover {
+        background-color: #9352aa;
+        color: #fff;
+        transition: .5s;
+        width: 51%;
+        padding: 1.1rem 1rem;
+        border: 5px double var(--border-cardapio);
+    }
+
+    .formulario__botao:active {
+        background-color: #9368c5;
+    }
+
+    .contato a:hover {
+        background-color: #9352aa;
+        color: #fff;
+        transition: .5s;
+        padding: 2rem;
+        border-radius: 100px;
+        border: 5px double var(--border-cardapio);
+    }
+
+    .campo__escrita {
+        font-size: 20px;
+    }
+
+    .campo__escrita::placeholder {
+        font-size: 16px;
+    }
+
+    footer>div>p {
+        font-size: 17px;
+    }
+
+    footer>div {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contato>a {
+        height: auto;
+        width: 5%;
+        margin: 1rem;
+        padding: 1.5rem;
+        transition: .5s;
+    }
+}
